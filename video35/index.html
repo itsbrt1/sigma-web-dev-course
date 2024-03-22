@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selector</title>
+    <style>
+        /*.box:first-child{
+            background-color: red;
+        }*/
+        /*.box::first-line {
+            color: rgb(31, 11, 214);
+        }*/
+        /*.boxes *{
+            color: red;
+            border: 2px solid black;
+        }*/
+        /*p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        }*/
+        /*.box:nth-child(even){
+            background-color: red;
+        }*/
+        ::selection{
+            color: aqua;
+            background-color: rgb(255, 0, 0);
+        }
+        .box::first-letter{
+            font-size: x-large;
+            color: rgb(255, 187, 0);
+        }
+        input::placeholder{
+            color: blue;
+            background-color: aqua;
+
+        }
+        </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am first box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+    <input type="text" placeholder="type your name here">YOUR NAME
+
+
+
+
+
+
+
+</body>
+
+</html>
